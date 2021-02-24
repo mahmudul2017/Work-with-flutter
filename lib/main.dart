@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import './app_screens/first_screen.dart';
 import './app_screens/home.dart';
+import 'app_screens/sharedPreference.dart';
 
 // Normal Way Function Call
 /* void main() {
   runApp(MyFirstFlutterClass());
 } */
 
-// Advance Way Function Call
-// Function Expression
-// Or Flat Arrow
-void main() => runApp(
+// Advance Way Function Call [Function Expression] Or [Flat Arrow]
+/*void main() => runApp(
      MaterialApp(
        debugShowCheckedModeBanner: false,
        // title: "Basic ListView",
@@ -30,7 +29,7 @@ void main() => runApp(
          ),
        ),
      )
-);
+);*/
 
 // For First Screen Class
 /*class MyFirstFlutterClass extends StatelessWidget {
@@ -48,8 +47,9 @@ void main() => runApp(
   }
 }*/
 
-class MyHomeClass extends StatelessWidget {
+void main() => runApp(MyApp());
 
+class MyHomeClass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -150,9 +150,9 @@ void showSnackBar(BuildContext context, String items) {
      action: SnackBarAction(
       label: "Undo",
       onPressed: () {
-        debugPrint("Undo an item at $items");
-     }
-    ),);
+        debugPrint("Undo an item at $items");}
+    ),
+  );
 
   Scaffold.of(context).showSnackBar(snackBar);
 }
