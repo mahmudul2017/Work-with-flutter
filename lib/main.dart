@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import './app_screens/first_screen.dart';
 import './app_screens/home.dart';
-import 'app_screens/sharedPreference.dart';
+import './app_screens/liquidSwipe.dart';
+import './app_screens/sharedPreference.dart';
+import 'package:liquid_swipe/liquid_swipe.dart';
 
 // Normal Way Function Call
 /* void main() {
@@ -33,7 +35,6 @@ import 'app_screens/sharedPreference.dart';
 
 // For First Screen Class
 /*class MyFirstFlutterClass extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -47,7 +48,7 @@ import 'app_screens/sharedPreference.dart';
   }
 }*/
 
-void main() => runApp(MyApp());
+void main() => runApp(MyLiquidSwipe());
 
 class MyHomeClass extends StatelessWidget {
   @override
