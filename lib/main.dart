@@ -5,6 +5,7 @@ import './app_screens/liquidSwipe.dart';
 import './app_screens/sharedPreference.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'bottom_navigation/bottomNavigation.dart';
+import 'json_parse/jsonParse.dart';
 
 // Normal Way Function Call
 /* void main() {
@@ -49,7 +50,7 @@ import 'bottom_navigation/bottomNavigation.dart';
   }
 }*/
 
-void main() => runApp(bottomNavigation());
+void main() => runApp(jsonParse());
 
 class MyHomeClass extends StatelessWidget {
   @override
