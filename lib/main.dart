@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/state_manage/providerData.dart';
+import 'package:flutter_app/state_manage/providerManagement.dart';
+import 'package:provider/provider.dart';
 import './app_screens/first_screen.dart';
 import './app_screens/home.dart';
 import './app_screens/liquidSwipe.dart';
@@ -6,6 +9,7 @@ import './app_screens/sharedPreference.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'bottom_navigation/bottomNavigation.dart';
 import 'json_parse/jsonParse.dart';
+import 'state_manage/stateManagement.dart';
 
 // Normal Way Function Call
 /* void main() {
@@ -50,7 +54,9 @@ import 'json_parse/jsonParse.dart';
   }
 }*/
 
-void main() => runApp(jsonParse());
+void main() => runApp(ChangeNotifierProvider(
+    create: (Context) => providerData(),
+    child: providerManagement()));
 
 class MyHomeClass extends StatelessWidget {
   @override
