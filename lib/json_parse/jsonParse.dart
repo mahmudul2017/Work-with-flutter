@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'detailsPage.dart';
 
 class jsonParse extends StatelessWidget {
   @override
@@ -45,6 +46,9 @@ class _jsonParseDataState extends State<jsonParseData> {
           return ListTile(
             title: Text(jsonData[index]["first_name"], style: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),),
             subtitle: Text(jsonData[index]["email"], style: TextStyle(fontSize: 16, color: Colors.black87, fontWeight: FontWeight.w100),),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => detailsPage(receiveData: jsonData[index],)));
+            },
         );}
       ),
     );
