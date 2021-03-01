@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/login_preference/login.dart';
 import 'package:flutter_app/state_manage/providerData.dart';
 import 'package:flutter_app/state_manage/providerManagement.dart';
 import 'package:provider/provider.dart';
@@ -54,9 +55,12 @@ import 'state_manage/stateManagement.dart';
   }
 }*/
 
-void main() => runApp(ChangeNotifierProvider(
+void main() => runApp(login());
+
+//************* Provider apply ************* 
+/*void main() => runApp(ChangeNotifierProvider(
     create: (Context) => providerData(),
-    child: providerManagement()));
+    child: providerManagement()));*/
 
 class MyHomeClass extends StatelessWidget {
   @override
