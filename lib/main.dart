@@ -11,6 +11,7 @@ import 'package:liquid_swipe/liquid_swipe.dart';
 import 'bottom_navigation/bottomNavigation.dart';
 import 'calculator/smartCalculator.dart';
 import 'json_parse/jsonParse.dart';
+import 'listview/listviewNavigator.dart';
 import 'state_manage/stateManagement.dart';
 
 // Normal Way Function Call
@@ -56,7 +57,7 @@ import 'state_manage/stateManagement.dart';
   }
 }*/
 
-void main() => runApp(smartCalculator());
+void main() => runApp(listviewNavigator());
 
 //************* Provider apply ************* 
 /*void main() => runApp(ChangeNotifierProvider(
