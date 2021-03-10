@@ -1,0 +1,34 @@
+{
+  "previous": "Some URL for previous page",
+  "next": "Some URL for next page",
+  "results": [
+      {
+        "first_name": "David",
+        "last_name": "Warner",
+        "email": "dWarner31@gmail.com",
+        "phone": "+029291345",
+        "verified": true
+      },
+    {
+      "first_name": "Shane",
+      "last_name": "Watson",
+      "email": "sWatson33@gmail.com",
+      "phone": "+029291345",
+      "verified": false
+    },
+    {
+      "first_name": "Steve",
+      "last_name": "Smith",
+      "email": "sSmith49@gmail.com",
+      "phone": "+029291345",
+      "verified": true
+    },
+    {
+      "first_name": "Marnus",
+      "last_name": "Labuchane",
+      "email": "mlabuch33@gmail.com",
+      "phone": "+029291345",
+      "verified": true
+    }
+   ]
+}

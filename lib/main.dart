@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/json_table/jsonDataTable.dart';
 import 'package:flutter_app/login_preference/login.dart';
 import 'package:flutter_app/state_manage/providerData.dart';
 import 'package:flutter_app/state_manage/providerManagement.dart';
@@ -58,7 +59,7 @@ import 'state_manage/stateManagement.dart';
   }
 }*/
 
-void main() => runApp(dataTable());
+void main() => runApp(MyHomeClass());
 
 //************* Provider apply ************* 
 /*void main() => runApp(ChangeNotifierProvider(
@@ -71,7 +72,7 @@ class MyHomeClass extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "My Home Page",
-      home: Home(),
+      home: jsonDataTable(),
     );
   }
 }
