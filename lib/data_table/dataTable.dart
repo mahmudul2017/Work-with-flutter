@@ -48,6 +48,16 @@ class _dataTableStateState extends State<_dataTableState> {
               DataCell(Text('England'), showEditIcon: true),
               DataCell(Text('2019')),
               DataCell(Text('British')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Australia'), showEditIcon: true),
+              DataCell(Text('1887')),
+              DataCell(Text('Aussie')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Bangladesh'), showEditIcon: true),
+              DataCell(Text('1999')),
+              DataCell(Text('Tigers')),
             ])
           ],
         ),
