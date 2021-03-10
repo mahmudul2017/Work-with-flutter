@@ -63,7 +63,7 @@ class _simpleCalculatorState extends State<simpleCalculator> {
         }
         equationFontSize = 48.0;
         resultFontSize = 38.0;
-      }
+       }
     });
   }
 
