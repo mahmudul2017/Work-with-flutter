@@ -10,6 +10,7 @@ import './app_screens/sharedPreference.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'bottom_navigation/bottomNavigation.dart';
 import 'calculator/smartCalculator.dart';
+import 'data_table/dataTable.dart';
 import 'json_parse/jsonParse.dart';
 import 'state_manage/stateManagement.dart';
 
@@ -56,7 +57,7 @@ import 'state_manage/stateManagement.dart';
   }
 }*/
 
-void main() => runApp(smartCalculator());
+void main() => runApp(dataTable());
 
 //************* Provider apply ************* 
 /*void main() => runApp(ChangeNotifierProvider(
