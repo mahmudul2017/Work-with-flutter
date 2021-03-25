@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/grid_card/cardView.dart';
+import 'package:flutter_app/grid_card/gridView.dart';
 import 'package:flutter_app/json_table/jsonDataTable.dart';
 import 'package:flutter_app/login_preference/login.dart';
 import 'package:flutter_app/state_manage/providerData.dart';
@@ -59,7 +61,7 @@ import 'state_manage/stateManagement.dart';
   }
 }*/
 
-void main() => runApp(MyHomeClass());
+void main() => runApp(gridView());
 
 //************* Provider apply ************* 
 /*void main() => runApp(ChangeNotifierProvider(
